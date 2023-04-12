@@ -151,8 +151,11 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-navy-blue);
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-cont {
   display: flex;
@@ -271,18 +274,18 @@ button {
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  min-width: 264px;
 }
-.team-pic {
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-}
-.item-card {
+.team-card {
   background: var(--color-white);
-  display: block;
-  padding: 32px 16px;
+  min-width: 264px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+.item-card {
+  padding: 32px 16px;
 }
 .team-caption {
   font-weight: 500;
@@ -308,7 +311,7 @@ button {
   align-items: center;
   gap: 24px;
 }
-.social-bg {
+.team-social-bg {
   width: 40px;
   height: 40px;
 }
@@ -326,19 +329,17 @@ button {
   background-color: var(--color-ocean);
 }
 .team-icon {
-  width: 16px;
-  height: 16px;
   fill: var(--color-cloud);
 }
-/* Castomer */
-.castomer {
+/* Customer */
+.customer {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 .client-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -361,12 +362,13 @@ button {
   border-radius: 4px;
 }
 .client-cont {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   border: 1px solid var(--color-light-slate);
+  border-radius: 4px;
   color: var(#afb1b8);
 }
 .client-cont:hover,
@@ -379,6 +381,10 @@ button {
   max-width: 104px;
   max-height: 56px;
 }
+.bg-icon:hover,
+.bg-icon:focus {
+  fill: var(--color-ocean);
+}
 /* Footer */
 .footer {
   background: var(--color-navy-blue);
@@ -388,7 +394,8 @@ button {
 .box {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: baseline;
+  gap: 120px;
 }
 .logo-brend-footer {
   font-family: 'Raleway', sans-serif;
@@ -431,22 +438,24 @@ button {
   align-items: flex-start;
   gap: 16px;
 }
-.foot-social-bg {
-  display: flex;
+.foot-bg {
   width: 40px;
   height: 40px;
+}
+.social-bg {
+  display: flex;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
   background-color: var(--color-slate);
 }
-.foot-social-bg:hover,
-.foot-social-bg :focus {
+.social-bg:hover,
+.social-bg :focus {
   background-color: var(--color-green);
 }
 .foot-icon {
-  width: 16px;
-  height: 16px;
   fill: var(--color-cloud);
 }
 
