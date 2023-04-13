@@ -442,7 +442,7 @@ button {
   background-color: var(--color-iris);
 }
 .social-bg:hover,
-.social-bg :focus {
+.social-bg:focus {
   background-color: var(--color-green);
 }
 .foot-icon {
