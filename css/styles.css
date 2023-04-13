@@ -359,9 +359,6 @@ button {
   flex-basis: calc((100%-5 * 24px) / 6);
   height: 88px;
   max-width: 168px;
-  padding: 16px 32px 16px 32px;
-  border: 1px solid var(--color-light-slate);
-  border-radius: 4px;
 }
 .client-cont {
   display: flex;
@@ -375,17 +372,11 @@ button {
 }
 .client-cont:hover,
 .client-cont:focus {
-  border-color: var(--color-ocean);
   color: var(--color-ocean);
+  border: 1px solid var(--color-ocean);
 }
 .bg-icon {
-  fill: carrentColor;
-  max-width: 104px;
-  max-height: 56px;
-}
-.bg-icon:hover,
-.bg-icon:focus {
-  fill: var(--color-ocean);
+  fill: currentColor;
 }
 /* Footer */
 .footer {
@@ -400,6 +391,7 @@ button {
   gap: 120px;
 }
 .logo-brend-footer {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -407,13 +399,11 @@ button {
   line-height: 1.17;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  display: inline-block;
-  margin-bottom: 16px;
   color: var(--color-iris);
+  margin-bottom: 16px;
 }
 .fot {
   color: var(--color-cloud);
-  margin-bottom: 16px;
 }
 .foot-text {
   width: 264px;
@@ -422,8 +412,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-cloud);
-  margin-top: 16px;
-  margin-right: 120px;
 }
 .caption-social {
   font-style: medium, italic;
@@ -517,6 +505,9 @@ body {
 .card-item:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.card {
+  display: block;
 }
 .description {
   display: block;
