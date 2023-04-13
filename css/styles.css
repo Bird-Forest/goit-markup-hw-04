@@ -497,18 +497,18 @@ body {
   column-gap: 24px;
 }
 .card-item {
-  display: block;
   flex-basis: calc((100%-2 * 24px) / 3);
   max-width: 360px;
-}
-.card-item:hover,
-.card-item:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .card {
   display: block;
 }
+.card:hover,
+.card:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .description {
   display: block;
   padding: 32px 16px;
