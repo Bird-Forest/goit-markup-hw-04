@@ -205,7 +205,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 264px;
   gap: 24px;
 }
 .prof-cont > .prof-item {
